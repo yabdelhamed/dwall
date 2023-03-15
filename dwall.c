@@ -78,7 +78,7 @@ suntimes(int *rise_h, int *rise_m, int *set_h, int *set_m)
 	if (cos_ha < -1.0) cos_ha = -1.0;
 
 	double ha = acos(cos_ha) * 180.0 / M_PI;
-	double noon_time = 12.0 - (longitude / 15.0);
+	double noon_time = 12.0 - (longitude / 15.0) + timezone_offset;
 	double rise = noon_time - ha / 15.0;
 	double set = noon_time + ha / 15.0;
 

@@ -3,6 +3,7 @@
 /* Location for sunrise/sunset calculation */
 static const double latitude  = 30.0;   /* degrees N */
 static const double longitude = 31.0;   /* degrees E */
+static const int    timezone_offset = 2; /* hours from UTC (Cairo = +2) */
 
 /* Update interval in seconds (daemon mode) */
 static const unsigned int interval = 300;
